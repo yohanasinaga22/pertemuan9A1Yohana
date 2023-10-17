@@ -1,0 +1,23 @@
+angka = []
+
+for i in range(5):
+    angka_input = float(input(f"Masukkan angka ke-{i + 1}: "))
+    angka.append(angka_input)
+
+rata_rata = sum(angka) / len(angka)
+
+print(f"Rata-rata dari angka-angka tersebut adalah: {rata_rata}")
+
+array = [30, 7, 5, 8, 35]
+
+angka_cari = int(input("Masukkan angka yang ingin dicari: "))
+
+if angka_cari in array:
+    print("Ditemukan")
+else:
+    print("Tidak ditemukan")
+
+array = [1, 3, 5, 7, 9]
+array.reverse()
+array = [x + 1 for x in array]
+print(array)
